@@ -1,0 +1,47 @@
+@use './token';
+
+@use 'sass:list';
+
+.featured-products {
+
+    margin: 0 4rem;
+
+    h3 {
+        font-family: list.nth($list: token.$font-families, $n: 3);
+    }
+
+    img {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+}
+
+.featured-products-container {
+    display: flex;
+    gap: 1em;
+    margin-bottom: 2rem;
+}
+
+.featured-product {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    strong {
+        font-family: list.nth($list: token.$font-families, $n: 7);
+    }
+
+    .prix {
+        font-family: list.nth($list: token.$font-families, $n: 7);
+        
+        .prix-barre {
+            text-decoration: line-through;
+        }
+
+        strong {
+            margin-left: 1rem;
+        }
+    }
+
+}

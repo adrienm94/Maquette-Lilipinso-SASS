@@ -1,0 +1,33 @@
+@use './mixins';
+@use './buttons';
+
+.banners {
+    display: grid;
+    gap: 1em;
+    grid-template-rows: 1fr 0.5fr;
+    grid-template-columns: 0.5fr 0.5fr;
+    margin: 0 4rem;
+
+    .banner1 {
+        @include mixins.banner-position-in-grid(1, span 2);
+        background-image: url(./../assets/images/banniere_fleurie.png);
+        background-position: center;
+        background-size: cover;
+        height: 80vh;
+
+        button {
+            position: relative;
+            left: 64%;
+            top: 70%;
+            width: 10vw;
+        }
+    }
+
+    .banner2 {
+        @include mixins.banner-position-in-grid(2, 1);
+    }
+
+    .banner3 {
+        @include mixins.banner-position-in-grid(2, 2);
+    }
+}

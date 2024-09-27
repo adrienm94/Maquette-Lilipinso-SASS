@@ -1,0 +1,32 @@
+$font-families : "futura light",
+"futura book",
+"futura medium bt",
+"nimbus sans l regular",
+"nimbus romno9 l regita",
+"sofia pro regular",
+"sofia pro semi bold",
+"sofia pro light";
+
+$src-f-l :  url(./../assets/fonts/futura-light-webfont.woff),
+url(./../assets/fonts/futura-light-webfont.woff2);
+$src-f-b : url(./../assets/fonts/futura_book_font-webfont.woff),
+url(./../assets/fonts/futura_book_font-webfont.woff2);
+$src-f-m : url(./../assets/fonts/futura_medium_bt-webfont.woff),
+url(./../assets/fonts/futura_medium_bt-webfont.woff2);
+$src-n-s-l-r : url(./../assets/fonts/nimbus-sans-l.regular-webfont.woff),
+url(./../assets/fonts/nimbus-sans-l.regular-webfont.woff2);
+$src-n-r-l-r : url(./../assets/fonts/nimbusromno9l-regita-webfont.woff),
+url(./../assets/fonts/nimbusromno9l-regita-webfont.woff2);
+$src-s-p-r : url(./../assets/fonts/sofia_pro_regular-webfont.woff),
+url(./../assets/fonts/sofia_pro_regular-webfont.woff2);
+$src-s-p-s-b : url(./../assets/fonts/sofia_pro_semibold-webfont.woff),
+url(./../assets/fonts/sofia_pro_semibold-webfont.woff);
+$src-s-p-l : url(./../assets/fonts/sofia-pro-light-webfont.woff),
+url(./../assets/fonts/sofia-pro-light-webfont.woff2);
+
+$font-family-list : ("futura light" : $src-f-l, "futura book" : $src-f-b, "futura medium bt" : $src-f-m,
+"nimbus sans l regular" : $src-n-s-l-r, "nimbus romno9 l regita" : $src-n-r-l-r,
+"sofia pro regular" : $src-s-p-r, "sofia pro semi bold" : $src-s-p-s-b, "sofia pro light" : $src-s-p-l);
+
+$clr-black : black;
+$clr-white: white;

@@ -1,0 +1,12 @@
+@use "./token";
+
+@use "sass:map";
+
+@each $font, $urls in token.$font-family-list {
+
+    @font-face {
+        font-family: $font;
+        src: $urls;
+    }
+
+}

@@ -1,0 +1,29 @@
+@use './token';
+
+@use 'sass:list';
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    margin: 4rem 0 3rem 0;
+
+    .feature {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        img {
+            text-align: center;
+            width: 4rem;
+            height: 4rem;
+        }
+
+        .feature-title {
+            font-family: list.nth($list: token.$font-families, $n: 7);
+        }
+
+        .feature-precision {
+            font-family: list.nth($list: token.$font-families, $n: 2);
+        }
+    }
+}
