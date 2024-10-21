@@ -1,0 +1,32 @@
+@use './token';
+@use './mixins';
+
+@use 'sass:list';
+
+.room-sharing {
+    @include mixins.usual-section;
+
+    .p-title {
+        @include mixins.p-title();
+    }
+
+    .h3-description {
+       @include mixins.h3-description();
+    }
+
+    hr {
+        width: 10%;
+    }
+
+    .instagram-images {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 1rem;
+        width: 100%;
+
+        img {
+            width: 15%;
+        }
+    }
+
+}

@@ -1,0 +1,29 @@
+@use './token';
+
+@use 'sass:list';
+
+@mixin banner-position-in-grid($grid-row, $grid-column){
+    width: 100%;
+    grid-row: $grid-row;
+    grid-column: $grid-column;
+}
+
+@mixin usual-section($flex-direction : column){
+    display: flex;
+    flex-direction: $flex-direction;
+    align-items: center;
+    margin-bottom: 3rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
+}
+
+@mixin p-title(){
+    font-family: list.nth($list: token.$font-families, $n: 1);
+    margin: -1rem 0;
+}
+
+@mixin h3-description(){
+    margin: 0.75rem 0;
+    font-size: xx-large;
+    font-family: list.nth($list: token.$font-families, $n: 5);
+}

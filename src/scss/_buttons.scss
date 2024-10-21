@@ -1,0 +1,14 @@
+@use './token';
+
+@use 'sass:list';
+
+button {
+    padding: 1rem;
+    background-color: token.$clr-black;
+
+    a {
+        font-family: list.nth($list: token.$font-families, $n: 7);
+        text-decoration: none;
+        color: token.$clr_white;
+    }
+}

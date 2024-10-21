@@ -1,0 +1,58 @@
+@use './token';
+
+@use 'sass:list';
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    margin: 0 4rem;
+
+    .navbar-left {
+        display: flex;
+        align-items: end;
+        gap: 1rem;
+        font-family: list.nth($list: token.$font-families, $n: 6);
+
+        p {
+            font-family: inherit;
+            margin: 0;
+        }
+
+        .currency {
+            font-family: inherit;
+            border: none;
+            background-color: token.$clr-white;
+        }
+
+    }
+
+    .navbar-center {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .navbar-menu{
+        display: flex;
+        gap: 1rem;
+        list-style-type: none;
+        margin: 0;
+
+        li a {
+            font-family: list.nth($list: token.$font-families, $n: 7);
+            text-decoration: none;
+            color: token.$clr-black;
+        }
+    }
+
+    .navbar-right > *:not(:last-child) {
+        border-right: solid 1px token.$clr-black;
+        height: 1rem;
+        padding-inline: 0.5rem;
+        object-fit: contain;
+    }
+}
