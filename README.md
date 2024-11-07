@@ -30,7 +30,35 @@ npm install html-webpack-plugin --save-dev
 ```shell
 npm install webpack-dev-server --save-dev
 ```
-- Création d'un fichier de configuration ([**webpack.config.json**](https://github.com/adrienm94/Maquette-Lilipinso-SASS/blob/main/webpack.config.js))
+- Le fichier de configuration webpack :
+```json
+const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+
+module.exports = {
+    entry: './src/main.js', // Le fichier js principale de notre code source.
+    mode: 'development',
+    output: {
+        filename: 'main.js', // Le nom du bundle à générer
+        path: path.resolve(__dirname, 'dist'), // Le chemin dans lequel le bundle doit être généré
+    },
+    module: {
+        rules: [
+            {
+                test: /.scss$/,
+                use: ["style-loader", "css-loader", "sass-loader"],
+            },
+            {
+                test: /\.html$/i,
+                loader: "html-loader",
+            }
+        ],
+    },
+    plugins: [new HtmlWebpackPlugin({
+        template: 'src/index.html'
+    })]
+};
+```
 
 - Le fichier package.json :
 ```json
