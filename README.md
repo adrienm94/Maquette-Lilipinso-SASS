@@ -31,7 +31,7 @@ npm install html-webpack-plugin --save-dev
 npm install webpack-dev-server --save-dev
 ```
 - Le fichier de configuration webpack.config.js :
-```json
+```js
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
