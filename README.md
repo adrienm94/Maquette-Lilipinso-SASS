@@ -1,6 +1,6 @@
 # Intégration de maquette en SASS avec webpack
 
-## Installation
+## Récupération du code
 
 - Clonage de ce dépôt git 
 ```shell 
@@ -10,19 +10,19 @@ git clone https://github.com/adrienm94/Maquette-Lilipinso-SASS.git
 ```shell
 cd Maquette-Lilipinso-SASS
 ```
-- Initilisation du projet avec node package manager fourni par ([NodeJS](https://nodejs.org/))
-```shell
-npm init -y
-```
-- Installation de webpack en mode développement:
+
+## Installation des dépendances nécessaires en mode développement
+
+- Utilisation nécessire de npm (node package manager) fourni par ([NodeJS](https://nodejs.org/))
+- Installation de webpack :
 ```shell
 npm install webpack webpack-cli --save-dev
 ```
-- Installation des loaders:
+- Installation des loaders :
 ```shell
 npm install html-loader sass-loader css-loader style-loader sass --save-dev
 ```
-- Installation du plugin HtmlWebPackPlugin pour la création simplifiée de fichiers html:
+- Installation du plugin HtmlWebPackPlugin pour la création simplifiée de fichiers html :
 ```shell
 npm install html-webpack-plugin --save-dev
 ```
