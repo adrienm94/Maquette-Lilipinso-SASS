@@ -60,7 +60,6 @@ module.exports = {
 };
 ```
 
- ```
 - Pour lancer le serveur de développement sur le port 8080 :
 ```shell
 npm start
